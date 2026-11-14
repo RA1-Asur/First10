@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Primary morning palette: deep indigo & sunrise amber/coral -->
+    <color name="primary">#1E3A8A</color>
+    <color name="on_primary">#FFFFFF</color>
+    <color name="primary_container">#DBEAFE</color>
+    <color name="on_primary_container">#1E293B</color>
+
+    <color name="secondary">#0D9488</color>
+    <color name="on_secondary">#FFFFFF</color>
+    <color name="secondary_container">#CCFBF1</color>
+    <color name="on_secondary_container">#134E4A</color>
+
+    <color name="tertiary">#D97706</color>
+    <color name="on_tertiary">#FFFFFF</color>
+    <color name="tertiary_container">#FEF3C7</color>
+    <color name="on_tertiary_container">#78350F</color>
+
+    <color name="error">#DC2626</color>
+    <color name="on_error">#FFFFFF</color>
+    <color name="error_container">#FEE2E2</color>
+    <color name="on_error_container">#7F1D1D</color>
+
+    <color name="background">#0F172A</color>
+    <color name="on_background">#F8FAFC</color>
+    <color name="surface">#1E293B</color>
+    <color name="on_surface">#F1F5F9</color>
+    <color name="surface_variant">#334155</color>
+    <color name="on_surface_variant">#CBD5E1</color>
+    <color name="outline">#64748B</color>
+
+    <color name="surface_card">#1E293B</color>
+    <color name="surface_card_selected">#2E3E56</color>
+    <color name="accent_green">#10B981</color>
+    <color name="accent_gold">#F59E0B</color>
+    <color name="accent_blue">#3B82F6</color>
+    <color name="text_muted">#94A3B8</color>
+    <color name="overlay_background">#E6090E17</color>
+</resources>

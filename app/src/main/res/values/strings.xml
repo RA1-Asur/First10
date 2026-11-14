@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">First 10</string>
+    <string name="app_tagline">Protect the first 10 minutes of your morning</string>
+    <string name="app_desc">Mindful behavioral friction to prevent habitual scrolling upon waking up.</string>
+
+    <!-- Navigation & Titles -->
+    <string name="title_dashboard">First 10</string>
+    <string name="title_restricted_apps">Restricted Apps</string>
+    <string name="title_allowed_apps">Always Allowed Apps</string>
+    <string name="title_exclusions">Exclusion Schedules</string>
+    <string name="title_routines">Morning Routines</string>
+    <string name="title_task_editor">Edit Task</string>
+    <string name="title_messages">Motivational Messages</string>
+    <string name="title_pin">Security PIN</string>
+    <string name="title_pin_recovery">PIN Recovery</string>
+    <string name="title_settings">Protected Settings</string>
+    <string name="title_permissions">Permission Center</string>
+    <string name="title_stealth">Stealth Friction Mode</string>
+    <string name="title_emergency">Emergency Access</string>
+    <string name="title_miui_guide">MIUI 12.5 &amp; Xiaomi Setup</string>
+
+    <!-- Dashboard -->
+    <string name="status_protected">PROTECTION ACTIVE</string>
+    <string name="status_idle">STANDBY — READY FOR NEXT UNLOCK</string>
+    <string name="status_disabled">PROTECTION PAUSED</string>
+    <string name="duration_label">Restriction Duration</string>
+    <string name="apps_blocked_count">%1$d apps restricted</string>
+    <string name="apps_allowed_count">%1$d apps always allowed</string>
+    <string name="exclusions_count">%1$d exclusion schedules</string>
+    <string name="routine_progress_label">Today\'s Routine Completion</string>
+    <string name="time_remaining">Remaining: %1$s</string>
+    <string name="btn_test_overlay">Preview Blocking Screen</string>
+    <string name="btn_open_settings">Settings (PIN Required)</string>
+    <string name="btn_permissions">Check Permissions</string>
+
+    <!-- Blocking Screen -->
+    <string name="blocking_greeting">GOOD MORNING.</string>
+    <string name="blocking_subheading">Your morning belongs to you.</string>
+    <string name="blocking_remaining_title">Restriction Remaining:</string>
+    <string name="blocking_tasks_title">A FEW THINGS TO DO FIRST:</string>
+    <string name="blocking_emergency_btn">Hold for Emergency Bypass (10s)</string>
+    <string name="blocking_emergency_holding">Holding: %1$d s…</string>
+    <string name="blocking_completed_tasks">%1$d of %2$d tasks completed (%3$d%%)</string>
+
+    <!-- Default Motivational Messages -->
+    <string name="default_msg_1">WAIT A MOMENT.\nWhat are you looking for?\nYou picked up your phone automatically.\nYour morning belongs to you.</string>
+    <string name="default_msg_2">You don\'t need to check everything right now.</string>
+    <string name="default_msg_3">Give your mind a head start.</string>
+    <string name="default_msg_4">Your goals deserve the first 10 minutes.</string>
+    <string name="default_msg_5">Don\'t trade your morning for scrolling.</string>
+    <string name="default_msg_6">Take a moment. You have something better to do.</string>
+
+    <!-- Default Routine Tasks -->
+    <string name="default_task_1">Brush your teeth</string>
+    <string name="default_task_2">Freshen up</string>
+    <string name="default_task_3">Take a bath</string>
+    <string name="default_task_4">Drink a glass of water</string>
+    <string name="default_task_5">Get dressed</string>
+    <string name="default_task_6">Have breakfast</string>
+    <string name="default_task_7">Start studying / focused work</string>
+
+    <!-- Permissions -->
+    <string name="perm_usage_access_title">Usage Access</string>
+    <string name="perm_usage_access_desc">Required to detect when a distracting app is launched.</string>
+    <string name="perm_overlay_title">Display Over Other Apps</string>
+    <string name="perm_overlay_desc">Required to display the calm morning blocking routine over restricted apps.</string>
+    <string name="perm_admin_title">Device Administrator</string>
+    <string name="perm_admin_desc">Adds friction against impulsive deactivation before your morning routine finishes.</string>
+    <string name="perm_battery_title">Battery Optimization</string>
+    <string name="perm_battery_desc">Allows First 10 to monitor unlock events reliably without being killed by Android.</string>
+    <string name="perm_accessibility_title">Accessibility Service (Optional)</string>
+    <string name="perm_accessibility_desc">Provides instant zero-latency foreground detection without polling.</string>
+    <string name="perm_notifications_title">Notifications</string>
+    <string name="perm_notifications_desc">Shows ongoing restriction countdown in notification drawer.</string>
+    <string name="btn_grant">Grant</string>
+    <string name="status_granted">Granted</string>
+    <string name="status_missing">Missing</string>
+
+    <!-- Accessibility Service -->
+    <string name="accessibility_service_label">First 10 App Guardian</string>
+    <string name="accessibility_service_description">Monitors foreground window transitions to protect your morning focus from distracting apps.</string>
+
+    <!-- Notification Service -->
+    <string name="notification_channel_name">First 10 Focus Monitor</string>
+    <string name="notification_channel_desc">Shows ongoing focus timer during morning restriction.</string>
+    <string name="notification_title_active">First 10 Active</string>
+    <string name="notification_text_active">Your morning belongs to you • %1$s remaining</string>
+
+    <!-- PIN & Security -->
+    <string name="enter_pin">Enter 4-digit PIN</string>
+    <string name="setup_pin">Create a 4-digit PIN</string>
+    <string name="confirm_pin">Confirm 4-digit PIN</string>
+    <string name="pin_mismatch">PINs do not match. Try again.</string>
+    <string name="pin_incorrect">Incorrect PIN. %1$d attempts remaining.</string>
+    <string name="pin_locked">Too many attempts. Locked for %1$d seconds.</string>
+    <string name="forgot_pin">Forgot PIN?</string>
+
+    <!-- Common Buttons -->
+    <string name="btn_save">Save</string>
+    <string name="btn_cancel">Cancel</string>
+    <string name="btn_delete">Delete</string>
+    <string name="btn_add">Add</string>
+    <string name="btn_edit">Edit</string>
+    <string name="btn_enable">Enable</string>
+    <string name="btn_disable">Disable</string>
+    <string name="search_hint">Search installed apps…</string>
+</resources>

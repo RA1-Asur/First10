@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <!-- Rising Sun Arc -->
+    <path
+        android:fillColor="#F59E0B"
+        android:pathData="M54,28 A26,26 0 0,1 80,54 L28,54 A26,26 0 0,1 54,28 Z" />
+    <!-- Clock circle -->
+    <path
+        android:strokeColor="#38BDF8"
+        android:strokeWidth="4"
+        android:fillColor="#00000000"
+        android:pathData="M54,54 m-28,0 a28,28 0 1,0 56,0 a28,28 0 1,0 -56,0" />
+    <!-- "10" indicator hands -->
+    <path
+        android:strokeColor="#FFFFFF"
+        android:strokeWidth="3.5"
+        android:strokeLineCap="round"
+        android:pathData="M54,54 L54,34" />
+    <path
+        android:strokeColor="#FFFFFF"
+        android:strokeWidth="3.5"
+        android:strokeLineCap="round"
+        android:pathData="M54,54 L68,64" />
+</vector>
