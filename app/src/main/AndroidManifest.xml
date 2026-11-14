@@ -28,7 +28,7 @@
     </queries>
 
     <application
-        android:name=".First10Application"
+        android:name="com.first10.app.First10Application"
         android:allowBackup="false"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -38,20 +38,25 @@
 
         <!-- Main Dashboard Activity -->
         <activity
-            android:name=".MainActivity"
+            android:name="com.first10.app.ui.MainActivity"
             android:exported="true"
             android:label="@string/app_name"
-            android:launchMode="singleTop" />
+            android:launchMode="singleTop">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.INFO" />
+            </intent-filter>
+        </activity>
 
         <!-- Launcher Alias for Stealth Friction Mode -->
         <activity-alias
-            android:name=".MainActivityAlias"
+            android:name="com.first10.app.MainActivityAlias"
             android:enabled="true"
             android:exported="true"
             android:icon="@mipmap/ic_launcher"
             android:label="@string/app_name"
             android:roundIcon="@mipmap/ic_launcher_round"
-            android:targetActivity=".MainActivity">
+            android:targetActivity="com.first10.app.ui.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
@@ -60,7 +65,7 @@
 
         <!-- Fullscreen Blocking Screen -->
         <activity
-            android:name=".BlockingActivity"
+            android:name="com.first10.app.ui.BlockingActivity"
             android:excludeFromRecents="true"
             android:exported="false"
             android:launchMode="singleTask"
@@ -71,90 +76,90 @@
 
         <!-- Protected Settings Hub -->
         <activity
-            android:name=".SettingsActivity"
+            android:name="com.first10.app.ui.SettingsActivity"
             android:exported="false"
             android:label="@string/title_settings"
-            android:parentActivityName=".MainActivity" />
+            android:parentActivityName="com.first10.app.ui.MainActivity" />
 
         <!-- App Manager (Restricted / Allowed) -->
         <activity
-            android:name=".AppManagerActivity"
+            android:name="com.first10.app.ui.AppManagerActivity"
             android:exported="false"
             android:label="@string/title_restricted_apps"
-            android:parentActivityName=".SettingsActivity"
+            android:parentActivityName="com.first10.app.ui.SettingsActivity"
             android:windowSoftInputMode="adjustResize" />
 
         <!-- Exclusion Scheduler -->
         <activity
-            android:name=".ExclusionSchedulerActivity"
+            android:name="com.first10.app.ui.ExclusionSchedulerActivity"
             android:exported="false"
             android:label="@string/title_exclusions"
-            android:parentActivityName=".SettingsActivity" />
+            android:parentActivityName="com.first10.app.ui.SettingsActivity" />
 
         <!-- Morning Routine Manager -->
         <activity
-            android:name=".RoutineManagerActivity"
+            android:name="com.first10.app.ui.RoutineManagerActivity"
             android:exported="false"
             android:label="@string/title_routines"
-            android:parentActivityName=".SettingsActivity" />
+            android:parentActivityName="com.first10.app.ui.SettingsActivity" />
 
         <!-- Task Editor -->
         <activity
-            android:name=".TaskEditorActivity"
+            android:name="com.first10.app.ui.TaskEditorActivity"
             android:exported="false"
             android:label="@string/title_task_editor"
-            android:parentActivityName=".RoutineManagerActivity" />
+            android:parentActivityName="com.first10.app.ui.RoutineManagerActivity" />
 
         <!-- Motivational Messages Manager -->
         <activity
-            android:name=".MessagesActivity"
+            android:name="com.first10.app.ui.MessagesActivity"
             android:exported="false"
             android:label="@string/title_messages"
-            android:parentActivityName=".SettingsActivity" />
+            android:parentActivityName="com.first10.app.ui.SettingsActivity" />
 
         <!-- Permissions & Health Overview -->
         <activity
-            android:name=".PermissionsActivity"
+            android:name="com.first10.app.ui.PermissionsActivity"
             android:exported="false"
             android:label="@string/title_permissions"
-            android:parentActivityName=".MainActivity" />
+            android:parentActivityName="com.first10.app.ui.MainActivity" />
 
         <!-- PIN Entry & Setup -->
         <activity
-            android:name=".PinActivity"
+            android:name="com.first10.app.ui.PinActivity"
             android:exported="false"
             android:label="@string/title_pin"
             android:launchMode="singleTop" />
 
         <!-- PIN Recovery -->
         <activity
-            android:name=".PinRecoveryActivity"
+            android:name="com.first10.app.ui.PinRecoveryActivity"
             android:exported="false"
             android:label="@string/title_pin_recovery" />
 
         <!-- Stealth Friction Mode Settings -->
         <activity
-            android:name=".StealthActivity"
+            android:name="com.first10.app.ui.StealthActivity"
             android:exported="false"
             android:label="@string/title_stealth"
-            android:parentActivityName=".SettingsActivity" />
+            android:parentActivityName="com.first10.app.ui.SettingsActivity" />
 
         <!-- Emergency Access Hold-to-Bypass -->
         <activity
-            android:name=".EmergencyAccessActivity"
+            android:name="com.first10.app.ui.EmergencyAccessActivity"
             android:exported="false"
             android:label="@string/title_emergency" />
 
         <!-- MIUI 12.5 Setup Guide -->
         <activity
-            android:name=".MiuiGuideActivity"
+            android:name="com.first10.app.ui.MiuiGuideActivity"
             android:exported="false"
             android:label="@string/title_miui_guide"
-            android:parentActivityName=".PermissionsActivity" />
+            android:parentActivityName="com.first10.app.ui.PermissionsActivity" />
 
         <!-- Device Administrator Receiver -->
         <receiver
-            android:name=".First10DeviceAdminReceiver"
+            android:name="com.first10.app.receiver.First10DeviceAdminReceiver"
             android:description="@string/perm_admin_desc"
             android:exported="true"
             android:label="@string/app_name"
@@ -171,7 +176,7 @@
 
         <!-- Unlock Detection Receiver (ACTION_USER_PRESENT) -->
         <receiver
-            android:name=".UnlockReceiver"
+            android:name="com.first10.app.receiver.UnlockReceiver"
             android:enabled="true"
             android:exported="true">
             <intent-filter>
@@ -181,7 +186,7 @@
 
         <!-- Reboot Recovery Receiver -->
         <receiver
-            android:name=".BootReceiver"
+            android:name="com.first10.app.receiver.BootReceiver"
             android:enabled="true"
             android:exported="true">
             <intent-filter>
@@ -194,11 +199,12 @@
 
         <!-- Dialer Secret Code Recovery (*#*#1010#*#*) -->
         <receiver
-            android:name=".DialerCodeReceiver"
+            android:name="com.first10.app.receiver.DialerCodeReceiver"
             android:enabled="true"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.provider.Telephony.SECRET_CODE" />
+                <action android:name="android.telephony.action.SECRET_CODE" />
                 <data
                     android:host="1010"
                     android:scheme="android_secret_code" />
@@ -207,7 +213,7 @@
 
         <!-- Foreground Monitoring Service -->
         <service
-            android:name=".First10MonitoringService"
+            android:name="com.first10.app.service.First10MonitoringService"
             android:enabled="true"
             android:exported="false"
             android:foregroundServiceType="specialUse">
@@ -218,7 +224,7 @@
 
         <!-- Optional Accessibility Service for Zero-Latency Window Detection -->
         <service
-            android:name=".First10AccessibilityService"
+            android:name="com.first10.app.service.First10AccessibilityService"
             android:enabled="true"
             android:exported="true"
             android:label="@string/accessibility_service_label"

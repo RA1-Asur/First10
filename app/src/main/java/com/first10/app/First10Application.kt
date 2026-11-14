@@ -11,9 +11,13 @@ class First10Application : Application() {
 
     override fun onCreate() {
         super.onCreate()
-        val prefs = PreferencesManager.getInstance(this)
-        prefs.resetDailyTasksIfNewDay()
-        createNotificationChannel()
+        try {
+            val prefs = PreferencesManager.getInstance(this)
+            prefs.resetDailyTasksIfNewDay()
+            createNotificationChannel()
+        } catch (e: Exception) {
+            e.printStackTrace()
+        }
     }
 
     private fun createNotificationChannel() {
